@@ -34,12 +34,12 @@ const Column: React.FC<ColumnProps> = ({
 const Footer: React.FC = () => {
   return (
     <Container className="mb-20">
-      <footer className="rounded-2xl bg-stone-300 px-6 md:px-10 py-10 md:rounded-[2.5rem] md:py-16 lg:px-24">
+      <footer className="rounded-md bg-pebble-200 px-6 md:px-10 py-10 md:rounded-lg md:py-16 lg:px-24">
         <div className="flex flex-col justify-between gap-y-10 md:flex-row">
           <Column title="Newsletter abonnieren" className="w-full md:w-auto">
-            <div className="flex w-full items-center rounded-md bg-stone-200 p-3 font-gothic text-sm">
+            <div className="flex w-full items-center rounded-sm bg-pebble-100 p-3 font-gothic text-sm">
               <input
-                className="w-full border-none bg-transparent placeholder:text-stone-500 focus:border-none focus:outline-none md:w-56"
+                className="w-full border-none bg-transparent placeholder:text-neutral-500 focus:border-none focus:outline-none md:w-56"
                 placeholder="Deine Email"
                 type="email"
               />

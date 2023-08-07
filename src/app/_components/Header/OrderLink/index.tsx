@@ -11,9 +11,9 @@ const OrderLink: React.FC = () => {
     <div>
       <MotionLink
         href="/products/steasy"
-        className="block rounded-lg bg-[#892561] px-4 py-2 font-gothic text-sm text-white"
-        whileHover={{ scaleY: 0.92, scaleX: 0.97 }}
-        transition={{ duration: 0.2, ease: "easeInOut" }}
+        className="block rounded-sm bg-ginger-500 px-4 py-2 font-gothic text-sm text-white"
+        whileHover={{ scale: [0.957, 0.895] }}
+        transition={{ duration: 0.25 }}
       >
         Bestellen
       </MotionLink>

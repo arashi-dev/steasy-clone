@@ -35,7 +35,7 @@ const NavItem: React.FC<NavItemProps> = ({ href, children, className }) => {
 
         <motion.span
           variants={{ initial: { scaleX: 0 }, animate: { scaleX: 1 } }}
-          className="absolute -bottom-2 block h-[2px] w-full bg-[#892561]"
+          className="absolute -bottom-2 block h-[2px] w-full bg-ginger-500"
         />
       </MotionLink>
     </MotionConfig>

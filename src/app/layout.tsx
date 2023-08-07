@@ -8,7 +8,7 @@ import Footer from "./_components/Footer";
 const Layout: React.FC<React.PropsWithChildren> = ({ children }) => {
   return (
     <html lang="de">
-      <body className={clsx("bg-stone-200", gothic.variable)}>
+      <body className={clsx("bg-pebble-100", gothic.variable)}>
         <Header />
 
         <main>{children}</main>

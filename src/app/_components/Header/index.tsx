@@ -40,9 +40,10 @@ const Header: React.FC = () => {
       <header
         // ref={headerRef}
         className="
-      fixed left-1/2 top-12 w-[calc(100vw-theme(spacing.6)*2)] max-w-[50.5rem] -translate-x-1/2 rounded-xl px-8 py-4 
-      after:absolute after:left-0 after:top-0 after:-z-10 after:block after:h-full after:w-full after:rounded-xl after:bg-white after:bg-opacity-50 after:shadow-2xl after:backdrop-blur-sm after:content-['']
-      md:justify-normal"
+          fixed left-1/2 top-12 z-30 w-[calc(100vw-theme(spacing.6)*2)] max-w-[50.5rem] -translate-x-1/2 px-8 py-4
+          after:absolute after:left-0 after:top-0 after:-z-10 after:block after:h-full after:w-full after:rounded-md after:bg-white after:bg-opacity-50 after:shadow-2xl after:backdrop-blur-sm after:content-['']
+          md:justify-normal
+        "
       >
         <div className="flex items-center justify-between gap-3">
           <div className="flex w-max items-center gap-3 sm:gap-5">
@@ -89,7 +90,7 @@ const Header: React.FC = () => {
           <div className="py-8 md:hidden">
             <motion.span
               variants={{ initial: { opacity: 0 }, animate: { opacity: 1 } }}
-              className="absolute left-0 top-0 -z-10 h-full w-full rounded-xl bg-white"
+              className="absolute left-0 top-0 -z-10 h-full w-full rounded-md bg-white"
             />
 
             <ul className="flex flex-col gap-7">
