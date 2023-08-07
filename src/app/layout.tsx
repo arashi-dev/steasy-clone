@@ -3,6 +3,7 @@ import "~/styles/globals.css";
 import Header from "./_components/Header";
 import clsx from "clsx";
 import { gothic } from "./_fonts";
+import Footer from "./_components/Footer";
 
 const Layout: React.FC<React.PropsWithChildren> = ({ children }) => {
   return (
@@ -11,6 +12,8 @@ const Layout: React.FC<React.PropsWithChildren> = ({ children }) => {
         <Header />
 
         <main>{children}</main>
+
+        <Footer />
       </body>
     </html>
   );
