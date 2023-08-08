@@ -8,9 +8,6 @@ import plugin from "tailwindcss/plugin"
 export default {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    boxShadow: {
-      "2xl": "0 25px 50px -12px rgb(0 0 0 / 0.10);",
-    },
     fontFamily: {
       gothic: ["var(--font-gothic)"],
     },
@@ -67,7 +64,10 @@ export default {
     extend: {
       gridTemplateRows: {
         "11": "repeat(11, 1fr)"
-      }
+      },
+      boxShadow: {
+        "2xl": "0 25px 50px -12px rgb(0 0 0 / 0.10);",
+      },
     }
   },
   plugins: [
