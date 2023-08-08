@@ -42,6 +42,9 @@ const TextFade: React.FC<TextFadeProps> = ({
       className={clsx("", className)}
       initial="initial"
       whileInView="animate"
+      viewport={{
+        once: true,
+      }}
       transition={{ staggerChildren: 0.1 }}
     >
       {lines.map((text, i) => (
