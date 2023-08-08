@@ -1,10 +1,11 @@
 import React from "react";
-import TextFace from "~/app/_components/TextFade";
+import TextFade from "~/app/_components/TextFade";
 
 const Hero: React.FC = () => {
   return (
     <div className="relative mt-10 block w-full md:px-12 lg:mt-0">
-      <TextFace
+      <TextFade
+        element="h1"
         lines={["Lunch steamen,", "leicht gemacht."]}
         className="
           absolute bottom-full left-1/2 block w-full -translate-x-1/2 text-center font-gothic text-3xl/tight font-bold 

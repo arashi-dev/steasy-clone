@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import clsx from "clsx";
 import { motion } from "framer-motion";
@@ -22,19 +22,23 @@ const Line: React.FC<LineProps> = ({ className, children }) => {
   );
 };
 
-type TextFaceProps = {
+type TextFadeProps = {
   lines: React.ReactNode[];
+  element?: keyof typeof motion;
   className?: string;
   lineClassName?: string;
 };
 
-const TextFace: React.FC<TextFaceProps> = ({
+const TextFade: React.FC<TextFadeProps> = ({
+  element = "p",
   lines,
   className,
   lineClassName,
 }) => {
+  const MotionElement = motion[element];
+
   return (
-    <motion.p
+    <MotionElement
       className={clsx("", className)}
       initial="initial"
       whileInView="animate"
@@ -45,8 +49,8 @@ const TextFace: React.FC<TextFaceProps> = ({
           {text}
         </Line>
       ))}
-    </motion.p>
+    </MotionElement>
   );
 };
 
-export default TextFace;
+export default TextFade;
