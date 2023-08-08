@@ -1,4 +1,5 @@
 import { type Config } from "tailwindcss";
+import plugin from "tailwindcss/plugin"
 
 // --row-padding: 20px 0;
 // --gutter: 24px;
@@ -63,6 +64,19 @@ export default {
         "900": "#171717",
       },
     },
+    extend: {
+      gridTemplateRows: {
+        "11": "repeat(11, 1fr)"
+      }
+    }
   },
-  plugins: [],
+  plugins: [
+    plugin(({ matchUtilities }) => {
+      matchUtilities({
+        "grid-area": value => ({
+          gridArea: value
+        }),
+      })
+    })
+  ],
 } satisfies Config;
