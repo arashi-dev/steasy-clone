@@ -102,7 +102,7 @@ const Benefit: React.FC<BenefitProps> = ({
 
           <Link
             href={linkHref}
-            className="mt-5 block w-max rounded-sm bg-white px-5 py-4 text-sm text-black md:mt-7"
+            className="mt-5 block w-max rounded-sm bg-white px-5 py-4 text-sm text-black transition-all duration-[250ms] hover:scale-x-[.961] hover:scale-y-[.917] md:mt-7"
           >
             {linkLabel}
           </Link>

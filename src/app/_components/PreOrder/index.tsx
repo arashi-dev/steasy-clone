@@ -29,7 +29,7 @@ const PreOrder: React.FC = () => {
 
         <Link
           href="/products/steasy"
-          className="mt-7 block w-max rounded-sm bg-black px-5 py-4 font-gothic text-white"
+          className="mt-7 block w-max rounded-sm bg-black px-5 py-4 font-gothic text-white transition-all duration-[250ms] hover:scale-x-[.961] hover:scale-y-[.917]"
         >
           Zum Shop
         </Link>
