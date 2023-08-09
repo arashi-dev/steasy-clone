@@ -10,7 +10,7 @@ import BenefitBox1Image from "./_images/collage-benefits-box-1.png";
 import Benefits2Image from "./_images/benefits_02.jpg";
 import BenefitBox2Image from "./_images/collage-benefits-box-2.png";
 import BackgroundTransitionProvider from "./_components/BackgroundTransition/Provider";
-import PreOrder from "./_components/PreOrder";
+import PreOrder from "../_components/PreOrder";
 
 const Page = () => {
   return (
@@ -53,11 +53,7 @@ const Page = () => {
         />
       </BackgroundTransitionProvider>
 
-      <div className="mt-24 md:mt-36" />
-
       <PreOrder />
-
-      <div className="mt-24 md:mt-36" />
     </div>
   );
 };

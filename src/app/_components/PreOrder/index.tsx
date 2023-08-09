@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const PreOrder: React.FC = () => {
   return (
-    <Container innerClassName="relative">
+    <Container innerClassName="relative my-24 md:my-36">
       <div className="relative w-full md:w-3/4">
         <Image
           src={ProductsImage}

@@ -5,6 +5,7 @@ import Container from "../_components/Container";
 import Image from "next/image";
 
 import FoundersImage from "./_components/founders.jpg";
+import PreOrder from "../_components/PreOrder";
 
 const Page: React.FC = () => {
   return (
@@ -17,7 +18,7 @@ const Page: React.FC = () => {
         <Image src={FoundersImage} alt="founders" className="rounded-lg" />
       </Container>
 
-      <Container className="py-20 lg:py-40">
+      <Container className="pt-20 lg:pt-40">
         <p className="mx-auto w-full text-center font-gothic text-2xl/tight font-bold md:w-10/12 md:text-4xl/tight lg:w-8/12 lg:text-[2.5rem]/tight">
           “Wir sind überzeugt, dass die wichtigste Mahlzeit am Tag ein warmer
           Lunch ist, denn er gibt Energie für Körper und Geist. Es wird Zeit,
@@ -28,6 +29,8 @@ const Page: React.FC = () => {
           Johannes, Claudio und Reto
         </p>
       </Container>
+
+      <PreOrder />
     </div>
   );
 };
