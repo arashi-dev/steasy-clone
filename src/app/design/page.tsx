@@ -3,6 +3,7 @@ import Hero from "./_components/Hero";
 import Features from "./_components/Features";
 import MobileApp from "./_components/MobileApp";
 import Carousel from "./_components/Carousel";
+import PreOrder from "../_components/PreOrder";
 
 const Page = () => {
   return (
@@ -14,6 +15,8 @@ const Page = () => {
       <MobileApp />
 
       <Carousel />
+
+      <PreOrder />
     </div>
   );
 };
