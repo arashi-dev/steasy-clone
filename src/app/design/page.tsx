@@ -1,6 +1,7 @@
 import React from "react";
 import Hero from "./_components/Hero";
 import Features from "./_components/Features";
+import MobileApp from "./_components/MobileApp";
 
 const Page = () => {
   return (
@@ -8,6 +9,8 @@ const Page = () => {
       <Hero />
 
       <Features />
+
+      <MobileApp />
     </div>
   );
 };
