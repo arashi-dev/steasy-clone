@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import Container from "~/app/_components/Container";
 
-import ScrollTransition from "../ScrollTransition";
+import ScrollTransition from "../../../_components/ScrollTransition";
 import { type LinkHref } from "~/types";
 import clsx from "clsx";
 import BackgroundTransitionConsumer from "../BackgroundTransition/Consumer";

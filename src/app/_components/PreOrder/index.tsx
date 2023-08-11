@@ -5,11 +5,12 @@ import Container from "~/app/_components/Container";
 import ProductsImage from "./products.jpg";
 import ProductsMobileImage from "./mobile_preorder_img_sq@2x.jpg";
 import Link from "next/link";
+import ScrollTransition from "../ScrollTransition";
 
 const PreOrder: React.FC = () => {
   return (
     <Container innerClassName="relative my-24 md:my-36">
-      <div className="relative w-full md:w-3/4">
+      <ScrollTransition from={100} to={-100} className="relative w-full md:w-3/4">
         <Image
           src={ProductsImage}
           alt=""
@@ -20,7 +21,7 @@ const PreOrder: React.FC = () => {
           alt=""
           className="rounded-md md:hidden"
         />
-      </div>
+      </ScrollTransition>
 
       <div className="relative z-10 mx-auto -mt-8 w-[calc(100%-theme(spacing.6)*2)] rounded-md bg-pebble-100 px-4 py-8 shadow-xl md:absolute md:right-0 md:top-1/2 md:mt-0 md:w-4/12 md:-translate-y-1/2 md:px-10 md:py-12">
         <p className="font-gothic text-2xl font-bold lg:text-4xl">
