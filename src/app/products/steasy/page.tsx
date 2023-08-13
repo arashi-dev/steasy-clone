@@ -8,10 +8,11 @@ import Accordion from "~/app/_components/Accardion";
 import FeatureIconsGroup from "~/app/_components/FeatureIconsGroup";
 import MobileApp from "~/app/_components/MobileApp";
 import Exploded from "./Exploded";
+import { variants } from "./data";
 
 const Page: React.FC = () => {
   return (
-    <VariantProvider>
+    <VariantProvider variants={variants}>
       <AddOnProvider>
         <div>
           <HeaderSpace />

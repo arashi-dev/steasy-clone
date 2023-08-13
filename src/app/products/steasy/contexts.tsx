@@ -2,18 +2,26 @@
 
 import { useSearchParams } from "next/navigation";
 import { createContext, useState } from "react";
-import { variants } from "./data";
+import { type Variant } from "./data";
 
 export const VariantContext = createContext<string>("");
 
-export const VariantProvider: React.FC<React.PropsWithChildren> = ({
+type VariantProviderProps = React.PropsWithChildren<{
+  variants: Variant[];
+}>;
+
+export const VariantProvider: React.FC<VariantProviderProps> = ({
   children,
+  variants,
 }) => {
   const searchParams = useSearchParams();
 
   return (
     <VariantContext.Provider
-      value={searchParams.get("variant") ?? variants[0]!.id}
+      value={
+        variants.find((variant) => variant.id === searchParams.get("variant"))
+          ?.id ?? variants[0]!.id
+      }
     >
       {children}
     </VariantContext.Provider>

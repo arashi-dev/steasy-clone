@@ -3,6 +3,7 @@ import Price from "./Price";
 import VariantSelector from "./VariantSelector";
 import AddOnSelector from "./AddOnSelector";
 import { addOns, variants } from "../data";
+import AddToCartButton from "./AddToCardButton";
 
 const ProductInfo: React.FC = () => {
   return (
@@ -21,12 +22,7 @@ const ProductInfo: React.FC = () => {
 
       <AddOnSelector addOns={addOns} />
 
-      <button
-        type="button"
-        className="rounded-sm bg-ginger-500 px-5 py-4 font-gothic text-sm text-white transition-all duration-[250ms] hover:scale-x-[.961] hover:scale-y-[.917]"
-      >
-        Jetzt bestellen
-      </button>
+      <AddToCartButton />
 
       <p className="my-4 font-gothic text-base text-neutral-500">
         Versand im September 2023. Änderungen vorbehalten

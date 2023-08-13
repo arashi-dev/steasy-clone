@@ -7,7 +7,10 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import OrderLink from "./OrderLink";
 import NavItem from "../NavItem";
 import LogoIcon from "./LogoIcon";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
+import Cart from "./Cart";
+import { useShowCartStore } from "./stores";
+import { useCart } from "~/hooks/cart";
 
 const links = [
   { href: "/design", label: "Produktdetails" },
@@ -16,7 +19,10 @@ const links = [
 ] as const;
 
 const Header: React.FC = () => {
+  const showCart = useShowCartStore();
+  const { totalQuantity } = useCart();
   const [isNavOpened, setIsNavOpened] = useState(false);
+
   // const headerRef = useRef<HTMLDivElement>(null);
   // const [spaceHeight, setSpaceHeight] = useState(0);
 
@@ -71,7 +77,16 @@ const Header: React.FC = () => {
           <div className="flex w-max items-center gap-3 sm:gap-5">
             <OrderLink />
 
-            <button type="button">
+            <button
+              type="button"
+              onClick={() => showCart.show()}
+              className="relative"
+            >
+              {totalQuantity > 0 && (
+                <span className="rounded-full text-2xs/none absolute -right-1 -top-1 flex aspect-square w-4 items-center justify-center bg-black font-gothic text-white">
+                  {totalQuantity}
+                </span>
+              )}
               <BsCart2 className="text-2xl" />
             </button>
           </div>
@@ -103,6 +118,8 @@ const Header: React.FC = () => {
           </div>
         </motion.div>
       </header>
+
+      <AnimatePresence>{showCart.isEnabled && <Cart />}</AnimatePresence>
     </>
   );
 };
