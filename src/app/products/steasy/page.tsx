@@ -6,6 +6,8 @@ import ProductInfo from "./ProductInfo";
 import Images from "./Images";
 import Accordion from "~/app/_components/Accardion";
 import FeatureIconsGroup from "~/app/_components/FeatureIconsGroup";
+import MobileApp from "~/app/_components/MobileApp";
+import Exploded from "./Exploded";
 
 const Page: React.FC = () => {
   return (
@@ -64,8 +66,12 @@ const Page: React.FC = () => {
             <Images />
           </Container>
 
-          <Container>
+          <Container className="py-14">
             <FeatureIconsGroup />
+
+            <Exploded />
+
+            <MobileApp />
           </Container>
         </div>
       </AddOnProvider>
