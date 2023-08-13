@@ -5,6 +5,7 @@ import { AddOnProvider, VariantProvider } from "./contexts";
 import ProductInfo from "./ProductInfo";
 import Images from "./Images";
 import Accordion from "~/app/_components/Accardion";
+import FeatureIconsGroup from "~/app/_components/FeatureIconsGroup";
 
 const Page: React.FC = () => {
   return (
@@ -61,6 +62,10 @@ const Page: React.FC = () => {
             </div>
 
             <Images />
+          </Container>
+
+          <Container>
+            <FeatureIconsGroup />
           </Container>
         </div>
       </AddOnProvider>

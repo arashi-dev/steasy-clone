@@ -6,17 +6,7 @@ import Image from "next/image";
 
 import DimensionsImage from "./Dimensions_new@2x.png";
 import DimensionsMobileImage from "./dimensions-mobile_new.png";
-import IconCard from "./IconCard";
-import {
-  IconBill,
-  IconCharging,
-  IconClock,
-  IconNoWater,
-  IconPencil,
-  IconRain,
-  IconTongue,
-  IconWindow,
-} from "./icons";
+import FeatureIconsGroup from "~/app/_components/FeatureIconsGroup";
 
 const Features: React.FC = () => {
   return (
@@ -45,34 +35,7 @@ const Features: React.FC = () => {
           className="w-full md:hidden"
         />
 
-        <div className="mt-5 grid grid-cols-2 grid-rows-4 gap-x-12 gap-y-5 md:mt-24 md:grid-cols-4 md:grid-rows-2 md:gap-12">
-          <IconCard
-            icon={<IconTongue />}
-            text="Geschmack wird bestmöglich bewahrt"
-          />
-          <IconCard icon={<IconRain />} text="Kein Geruch dringt nach aussen" />
-          <IconCard
-            icon={<IconNoWater />}
-            text="Auslaufsicher transportierbar"
-          />
-          <IconCard
-            icon={<IconWindow />}
-            text="Spülmaschinenfeste Edelstahl-Foodschale"
-          />
-          <IconCard
-            icon={<IconPencil />}
-            text="Schweizerische Ingenieurskunst"
-          />
-          <IconCard icon={<IconCharging />} text="Kabellos steamen dank Akku" />
-          <IconCard
-            icon={<IconBill />}
-            text="Bedienung via App (Bluetooth®)"
-          />
-          <IconCard
-            icon={<IconClock />}
-            text="Schonend steamen in nur 15 min"
-          />
-        </div>
+        <FeatureIconsGroup className="text-white" />
       </div>
     </Container>
   );
