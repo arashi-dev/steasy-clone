@@ -6,7 +6,7 @@ import { addOns, variants } from "../data";
 
 const ProductInfo: React.FC = () => {
   return (
-    <div className="rounded-lg bg-pebble-200 px-10 py-12">
+    <div className="h-max rounded-lg bg-pebble-200 px-10 py-12">
       <h1 className="mb-4 font-gothic text-[2.5rem] font-bold">
         Lunch steamen, leicht gemacht.
       </h1>
