@@ -6,6 +6,11 @@ import Image from "next/image";
 
 import FoundersImage from "./_components/founders.jpg";
 import PreOrder from "../_components/PreOrder";
+import { type Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Die Steasy Story"
+}
 
 const Page: React.FC = () => {
   return (

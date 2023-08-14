@@ -9,6 +9,11 @@ import FeatureIconsGroup from "~/app/_components/FeatureIconsGroup";
 import MobileApp from "~/app/_components/MobileApp";
 import Exploded from "./Exploded";
 import { variants } from "./data";
+import { type Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Portable selbst erwärmende Lunchbox",
+};
 
 const Page: React.FC = () => {
   return (

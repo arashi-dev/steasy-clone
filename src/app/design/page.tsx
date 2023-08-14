@@ -4,6 +4,11 @@ import Features from "./_components/Features";
 import MobileApp from "../_components/MobileApp";
 import Carousel from "./_components/Carousel";
 import PreOrder from "../_components/PreOrder";
+import { type Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Hochwertiges Design von Steasy",
+};
 
 const Page = () => {
   return (

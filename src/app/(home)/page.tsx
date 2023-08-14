@@ -3,14 +3,20 @@ import HeaderSpace from "~/app/_components/HeaderSpace";
 import Hero from "./_components/Hero";
 import Intro from "./_components/Intro";
 import Benefit from "./_components/Benefit";
+import BackgroundTransitionProvider from "./_components/BackgroundTransition/Provider";
+import PreOrder from "../_components/PreOrder";
+import { type Metadata } from "next";
 
 import Benefits1Image from "./_images/benefits_01.jpg";
 import BenefitBox1Image from "./_images/collage-benefits-box-1.png";
-
 import Benefits2Image from "./_images/benefits_02.jpg";
 import BenefitBox2Image from "./_images/collage-benefits-box-2.png";
-import BackgroundTransitionProvider from "./_components/BackgroundTransition/Provider";
-import PreOrder from "../_components/PreOrder";
+
+export const metadata: Metadata = {
+  title: {
+    absolute: "Mobiler Mini-Steamer Steasy! Von Steasy",
+  },
+};
 
 const Page = () => {
   return (

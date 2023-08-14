@@ -4,6 +4,7 @@ import Title from "../_components/Title";
 import HeaderSpace from "../_components/HeaderSpace";
 import Link from "next/link";
 import type { LinkHref } from "~/types";
+import { type Metadata } from "next";
 
 type TextProps = React.PropsWithChildren<{
   className?: string;
@@ -26,6 +27,10 @@ const Anchor: React.FC<AnchorProps> = ({ href, children }) => {
       {children}
     </Link>
   );
+};
+
+export const metadata: Metadata = {
+  title: "Kontaktieren Sie uns",
 };
 
 const Page: React.FC = () => {
