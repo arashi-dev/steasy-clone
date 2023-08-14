@@ -56,7 +56,7 @@ const Footer: React.FC = () => {
 
           <Column title="Service" innerClassName="flex flex-col gap-6">
             <NavItem href="/faqs">FAQs</NavItem>
-            <NavItem href="/contacts">Kontakt</NavItem>
+            <NavItem href="/contact">Kontakt</NavItem>
           </Column>
 
           <Column title="Social" innerClassName="flex gap-4">

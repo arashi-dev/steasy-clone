@@ -20,7 +20,7 @@ const Layout: React.FC<React.PropsWithChildren> = ({ children }) => {
       <body className={clsx("bg-pebble-100", gothic.variable)}>
         <Header />
 
-        <main>{children}</main>
+        {children}
 
         <Footer />
 

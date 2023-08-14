@@ -15,7 +15,7 @@ import { useCart } from "~/hooks/cart";
 const links = [
   { href: "/design", label: "Produktdetails" },
   { href: "/story", label: "Über uns" },
-  { href: "/contacts", label: "Kontakt" },
+  { href: "/contact", label: "Kontakt" },
 ] as const;
 
 const Header: React.FC = () => {
