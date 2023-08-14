@@ -1,7 +1,7 @@
 import { Gothic_A1 } from "next/font/google";
 
 export const gothic = Gothic_A1({
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
+  weight: ["500", "800"],
   fallback: ["Times New Roman", "serif"],
   variable: "--font-gothic",
   display: "swap",

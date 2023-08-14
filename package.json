@@ -12,11 +12,12 @@
     "@mantine/hooks": "^6.0.19",
     "@t3-oss/env-nextjs": "^0.6.0",
     "clsx": "^2.0.0",
-    "framer-motion": "^10.15.1",
+    "framer-motion": "^10.15.2",
     "next": "^13.4.13",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.10.1",
+    "sharp": "^0.32.4",
     "type-fest": "^4.2.0",
     "zod": "^3.21.4",
     "zustand": "^4.4.1"
