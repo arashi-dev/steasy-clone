@@ -1,28 +1,45 @@
-# Create T3 App
+# Clone of [Steasy.ch](https://www.steasy.ch)
+> I was captivated by the sheer beauty and elegance of a certain website, and I decided to take on the challenge of cloning it. Through my dedicated efforts and determination, I am thrilled to announce that I have successfully replicated the website! I am excited to share this project with you all, and I hope you will appreciate the time and effort I put into it.
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+> **Cloned: [steasy-clone.vercel.app](https://steasy-clone.vercel.app)**
+>
+> Original: [steasy.ch](https://www.steasy.ch)
 
-## What's next? How do I make an app with this?
+## Motivation
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+The main motivation behind this project was to test my skills and push myself to the limits. I wanted to explore web development in a practical and fun way, and what better approach than to recreate a visually stunning and captivating website? By undertaking this endeavor, I aimed to enhance my understanding of various web technologies and improve my problem-solving abilities.
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+## Technologies Used
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+1. NextJS 13 (app directory)
+2. tailwind
+3. typescript
+4. @mantine/hooks
+5. create-t3-app
+6. framer motion (animations)
 
-## Learn More
+## How to Run
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+This project has been built with NextJS 13. so you need `node@16.8` and `yarn` installed.
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+#### List of available commands
+###### run in development mode
+```yarn dev```
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+###### build
+```yarn build```
 
-## How do I deploy this?
+###### start the built version
+```yarn start```
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+## IMPORTANT
+
+The cloned website contained in this repository is for demonstration purposes only and is not intended for commercial use. All credit for the original design, concept, and content goes to the respective owners and creators of the original website.
+
+I would like to emphasize that this project was solely created for educational and non-commercial purposes, and I do not claim any ownership over the original content or intellectual property associated with the cloned website.
+
+If you are the owner of the original website and have concerns about its presence in this repository, please feel free to contact me at arash382.jb@gmail.com so that I can address any issues promptly.
+
+I highly value and respect the principles of intellectual property and copyright, and I strive to adhere to ethical practices in my work as a web developer.
+
+Thank you for understanding the purpose and intent of this repository. I am open to any feedback and suggestions to improve my skills and contribute positively to the web development community.
