@@ -5,6 +5,7 @@ import clsx from "clsx";
 import { gothic } from "./_fonts";
 import Footer from "./_components/Footer";
 import { type Metadata } from "next";
+import InfoBox from "./_components/InfoBox";
 
 export const metadata: Metadata = {
   title: {
@@ -22,6 +23,8 @@ const Layout: React.FC<React.PropsWithChildren> = ({ children }) => {
         <main>{children}</main>
 
         <Footer />
+
+        <InfoBox />
       </body>
     </html>
   );
